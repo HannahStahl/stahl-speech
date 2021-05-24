@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, withRouter, Route } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
@@ -7,20 +7,16 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Home from './components/Home';
 import About from './components/About';
-import Items from './components/Items';
-import Item from './components/Item';
+import Services from './components/Services';
 import Contact from './components/Contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import config from './config';
-import Context from './context';
 
-const Routes = ({ items }) => {
+const Routes = () => {
   const routes = [
     { path: '/', Component: Home },
     { path: '/about', Component: About },
-    { path: '/items', Component: Items },
-    { path: '/items/:itemName', Component: Item },
+    { path: '/services', Component: Services },
     { path: '/contact', Component: Contact },
   ];
 
@@ -47,39 +43,18 @@ const Routes = ({ items }) => {
 };
 
 const App = withRouter(({ location }) => {
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    Promise.all([
-      fetch(`${config.apiURL}/publishedItems/${config.userID}`).then((res) => res.json()),
-      fetch(`${config.apiURL}/itemsToPhotos/${config.userID}`).then((res) => res.json()),
-      fetch(`${config.apiURL}/photos/${config.userID}`).then((res) => res.json()),
-    ]).then((results) => {
-      const [itemsList, itemsToPhotos, photos] = results;
-      itemsList.forEach((item, index) => {
-        const itemPhotoIds = itemsToPhotos
-          .filter((row) => row.itemId === item.itemId)
-          .map((row) => row.photoId);
-        itemsList[index].itemPhotos = photos.filter(
-          (photo) => itemPhotoIds.includes(photo.photoId),
-        );
-      });
-      setItems(itemsList);
-    });
-  }, []);
-
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [location]);
 
   return (
-    <Context.Provider value={{ items }}>
+    <>
       <NavBar />
       <div className="page-content">
-        <Routes items={items} />
+        <Routes />
       </div>
       {window.location.pathname !== '/' && <Footer />}
-    </Context.Provider>
+    </>
   );
 });
 

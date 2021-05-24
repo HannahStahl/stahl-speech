@@ -7,9 +7,12 @@ const Home = () => (
   <>
     <img src={`${config.publicCloudfrontURL}/template-home.jpg`} alt={config.businessName} className="home-page-image" />
     <div>
-      <h1>Awesome Website Title</h1>
-      <p>Time to create an awesome website.</p>
-      <NavLink to="/items"><Button size="lg" variant="outline-dark">{'Let\'s go'}</Button></NavLink>
+      <h1>Stahl Speech and Language Therapy</h1>
+      <p>
+        Providing exceptional and tailored speech and language services for the Greater Washington
+        area.
+      </p>
+      <NavLink to="/about"><Button size="lg" variant="outline-dark">Learn more</Button></NavLink>
     </div>
   </>
 );

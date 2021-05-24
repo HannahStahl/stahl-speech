@@ -46,42 +46,44 @@ const Contact = () => {
   return (
     <div>
       <h1>Contact</h1>
-      <form onSubmit={handleSubmit}>
-        <FormGroup controlId="name">
-          <FormControl
-            type="text"
-            placeholder="Your Name"
-            value={name}
-            onChange={(e) => updateValue(e, setName)}
-          />
-        </FormGroup>
-        <FormGroup controlId="email">
-          <FormControl
-            placeholder="Your Email Address"
-            type="email"
-            value={email}
-            onChange={(e) => updateValue(e, setEmail)}
-          />
-        </FormGroup>
-        <FormGroup controlId="message">
-          <FormControl
-            rows={10}
-            as="textarea"
-            placeholder="Your Message"
-            value={message}
-            onChange={(e) => updateValue(e, setMessage)}
-          />
-        </FormGroup>
-        <Button
-          block
-          type="submit"
-          size="lg"
-          variant="outline-dark"
-          disabled={!validateForm()}
-        >
-          {buttonText}
-        </Button>
-      </form>
+      <div className="content-container">
+        <form onSubmit={handleSubmit}>
+          <FormGroup controlId="name">
+            <FormControl
+              type="text"
+              placeholder="Your Name"
+              value={name}
+              onChange={(e) => updateValue(e, setName)}
+            />
+          </FormGroup>
+          <FormGroup controlId="email">
+            <FormControl
+              placeholder="Your Email Address"
+              type="email"
+              value={email}
+              onChange={(e) => updateValue(e, setEmail)}
+            />
+          </FormGroup>
+          <FormGroup controlId="message">
+            <FormControl
+              rows={10}
+              as="textarea"
+              placeholder="Your Message"
+              value={message}
+              onChange={(e) => updateValue(e, setMessage)}
+            />
+          </FormGroup>
+          <Button
+            block
+            type="submit"
+            size="lg"
+            variant="outline-dark"
+            disabled={!validateForm()}
+          >
+            {buttonText}
+          </Button>
+        </form>
+      </div>
     </div>
   );
 };
