@@ -19,7 +19,10 @@ const NavBar = () => (
       <Nav className="ml-auto" activeKey={window.location.pathname}>
         <Nav.Link as={NavLink} to="/about" eventKey="1">About</Nav.Link>
         <Nav.Link as={NavLink} to="/services" eventKey="2">Services</Nav.Link>
-        <Nav.Link as={NavLink} to="/contact" eventKey="3">Contact</Nav.Link>
+        <Nav.Link as={NavLink} to="/faq" eventKey="3">FAQ</Nav.Link>
+        <Nav.Link as={NavLink} to="/testimonials" eventKey="4">Testimonials</Nav.Link>
+        <Nav.Link as={NavLink} to="/resources" eventKey="5">Resources</Nav.Link>
+        <Nav.Link as={NavLink} to="/contact" eventKey="6">Contact</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

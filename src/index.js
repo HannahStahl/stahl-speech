@@ -8,6 +8,9 @@ import * as serviceWorker from './serviceWorker';
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
+import FAQ from './components/FAQ';
+import Testimonials from './components/Testimonials';
+import Resources from './components/Resources';
 import Contact from './components/Contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
@@ -17,6 +20,9 @@ const Routes = () => {
     { path: '/', Component: Home },
     { path: '/about', Component: About },
     { path: '/services', Component: Services },
+    { path: '/faq', Component: FAQ },
+    { path: '/testimonials', Component: Testimonials },
+    { path: '/resources', Component: Resources },
     { path: '/contact', Component: Contact },
   ];
 

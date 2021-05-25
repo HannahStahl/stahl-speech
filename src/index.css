@@ -68,19 +68,18 @@ h1 {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.bio {
   text-align: left;
 }
 
-.services {
+.services,
+.testimonials {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.service {
+.service,
+.testimonial {
   padding: 20px;
   margin: 20px;
   border: solid 1px black;
