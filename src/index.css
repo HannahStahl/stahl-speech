@@ -175,11 +175,15 @@ button.btn.btn-primary.btn-lg {
   filter: brightness(40%);
 }
 
-.about .img-placeholder {
+.about .img-placeholder,
+.about img {
   width: 100%;
-  height: 505px;
   float: left;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.about .img-placeholder {
+  height: 515px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,21 +194,11 @@ button.btn.btn-primary.btn-lg {
   color: white;
 }
 
-.about img {
-  width: 100%;
-  float: left;
-  margin-right: 40px;
-  margin-bottom: 20px;
-}
-
 @media all and (min-width: 600px) {
-  .about .img-placeholder {
-    width: 50%;
-    margin-right: 40px;
-  }
-
+  .about .img-placeholder,
   .about img {
-    width: 50%;
+    width: calc(50% - 15px);
+    margin-right: 50px;
   }
 }
 
