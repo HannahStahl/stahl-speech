@@ -47,7 +47,7 @@ p, li {
   color: var(--dark-teal);
 }
 
-h2, h3, h4, a {
+h2, h3, h4, a, i {
   color: var(--teal);
 }
 
@@ -317,4 +317,28 @@ button.btn.btn-primary.btn-lg {
   margin-bottom: 0;
   font-style: italic;
   font-weight: 600;
+}
+
+.resources {
+  display: flex;
+  justify-content: center;
+}
+
+.resource {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.resource:hover * {
+  cursor: pointer;
+  color: var(--dark-teal);
+}
+
+.resource i {
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+.resource h4 {
+  margin-left: 5px;
 }

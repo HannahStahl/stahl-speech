@@ -4,9 +4,16 @@ import content from '../content.json';
 const Resources = () => (
   <div>
     <h1>Resources</h1>
-    <ul className="content-container">
-      {content.resources.map((resource) => <li key={resource}>{resource}</li>)}
-    </ul>
+    <div className="content-container resources">
+      <div>
+        {content.resources.map((resource) => (
+          <div className="resource">
+            <i className="fas fa-cloud-download-alt" />
+            <h4 key={resource}>{resource}</h4>
+          </div>
+        ))}
+      </div>
+    </div>
   </div>
 );
 
