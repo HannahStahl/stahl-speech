@@ -4,17 +4,18 @@ import { NavLink } from 'react-router-dom';
 import config from '../config';
 
 const Home = () => (
-  <>
-    <img src={`${config.publicCloudfrontURL}/template-home.jpg`} alt={config.businessName} className="home-page-image" />
+  <div className="home">
+    <img src={`${config.publicCloudfrontURL}/stahl-speech-home.png`} alt={config.businessName} className="home-page-image" />
     <div>
       <h1>Stahl Speech and Language Therapy</h1>
       <p>
-        Providing exceptional and tailored speech and language services for the Greater Washington
-        area.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+        do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <NavLink to="/about"><Button size="lg" variant="outline-dark">Learn more</Button></NavLink>
+      <NavLink to="/services"><Button size="lg">Learn more</Button></NavLink>
     </div>
-  </>
+  </div>
 );
 
 export default Home;

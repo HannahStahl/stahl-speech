@@ -8,7 +8,7 @@ const NavBar = () => (
     <Navbar.Brand as={NavLink} to="/">
       <img
         alt="Home"
-        src="/favicon.ico"
+        src="/owl.svg"
         width="30"
         height="30"
         className="d-inline-block align-top"
@@ -17,12 +17,12 @@ const NavBar = () => (
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="ml-auto" activeKey={window.location.pathname}>
-        <Nav.Link as={NavLink} to="/about" eventKey="1">About</Nav.Link>
-        <Nav.Link as={NavLink} to="/services" eventKey="2">Services</Nav.Link>
-        <Nav.Link as={NavLink} to="/faq" eventKey="3">FAQ</Nav.Link>
-        <Nav.Link as={NavLink} to="/testimonials" eventKey="4">Testimonials</Nav.Link>
-        <Nav.Link as={NavLink} to="/resources" eventKey="5">Resources</Nav.Link>
-        <Nav.Link as={NavLink} to="/contact" eventKey="6">Contact</Nav.Link>
+        <Nav.Link as={NavLink} to="/about" eventKey="1"><h4>About</h4></Nav.Link>
+        <Nav.Link as={NavLink} to="/services" eventKey="2"><h4>Services</h4></Nav.Link>
+        <Nav.Link as={NavLink} to="/faq" eventKey="3"><h4>FAQ</h4></Nav.Link>
+        <Nav.Link as={NavLink} to="/testimonials" eventKey="4"><h4>Testimonials</h4></Nav.Link>
+        <Nav.Link as={NavLink} to="/resources" eventKey="5"><h4>Resources</h4></Nav.Link>
+        <Nav.Link as={NavLink} to="/contact" eventKey="6"><h4>Contact</h4></Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

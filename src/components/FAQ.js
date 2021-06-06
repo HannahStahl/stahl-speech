@@ -7,7 +7,7 @@ const FAQ = () => (
     <div className="content-container">
       {content.faq.map(({ question, answer }) => (
         <div key={question}>
-          <h4>{question}</h4>
+          <h3>{question}</h3>
           <p>{answer}</p>
         </div>
       ))}
