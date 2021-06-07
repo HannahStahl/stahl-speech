@@ -13,6 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   --light-gray: #eee;
+  --light-teal: #9dcbcf;
   --teal: #308b94;
   --dark-teal: #1f5d63;
 }
@@ -42,7 +43,7 @@ h1 {
   }
 }
 
-p, li {
+p, li, input.form-control, textarea.form-control {
   font-size: 17px;
   color: var(--dark-teal);
 }
@@ -58,6 +59,17 @@ h2 {
 a:hover {
   color: var(--dark-teal);
   text-decoration: none;
+}
+
+input.form-control, textarea.form-control {
+  border-radius: 0;
+  border-color: var(--teal);
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 0.2rem var(--light-teal);
 }
 
 .navbar {
