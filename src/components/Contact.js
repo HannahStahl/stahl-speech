@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import FormGroup from 'react-bootstrap/FormGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
+import content from '../content.json';
 import config from '../config';
 
 const Contact = () => {
@@ -46,19 +47,20 @@ const Contact = () => {
   return (
     <div>
       <h1>Contact</h1>
-      <div className="content-container">
+      <div className="content-container contact">
+        <p>{content.contact}</p>
         <form onSubmit={handleSubmit}>
           <FormGroup controlId="name">
             <FormControl
               type="text"
-              placeholder="Your Name"
+              placeholder="Your name"
               value={name}
               onChange={(e) => updateValue(e, setName)}
             />
           </FormGroup>
           <FormGroup controlId="email">
             <FormControl
-              placeholder="Your Email Address"
+              placeholder="Your email address"
               type="email"
               value={email}
               onChange={(e) => updateValue(e, setEmail)}
@@ -68,7 +70,7 @@ const Contact = () => {
             <FormControl
               rows={10}
               as="textarea"
-              placeholder="Your Message"
+              placeholder="Your message"
               value={message}
               onChange={(e) => updateValue(e, setMessage)}
             />

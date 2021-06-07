@@ -342,3 +342,7 @@ button.btn.btn-primary.btn-lg {
 .resource h4 {
   margin-left: 5px;
 }
+
+.contact {
+  max-width: 600px;
+}
