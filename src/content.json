@@ -1,21 +1,20 @@
 {
+  "intro": "Stahl Speech and Language Therapy LLC is a small private practice serving the greater Washington, D.C. area. With Stahl Speech, you can be confident that your child is receiving exceptional and tailored speech therapy that will help your child become an effective communicator.",
   "bio": [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    "Alexandra “Ally” Stahl is a speech-language pathologist with 10 years of experience working with the pediatric population. After earning her masters at University of North Carolina at Chapel Hill, she completed her clinical fellowship at an early intervention practice in Raleigh, NC. She spent the next 9 years at an outpatient center for Children’s National Hospital in Rockville, MD.",
+    "Ally has experience diagnosing and treating mixed receptive-expressive language disorders, expressive language delays, and higher-order language disorders. However, she specializes in pediatric speech sound disorders including childhood apraxia of speech and phonological disorders.  Ally is trained in Dynamic Temporal and Tactile Cueing (DTTC) and PROMPT. She is recognized by Apraxia Kids and the Once Upon a Time Foundation as a speech-language pathologist with additional training required for diagnosing and treating childhood apraxia of speech. Ally was also a part of the Velopharyngeal Insufficiency (VPI) clinic at Children’s National, assessing and treating hypernasal resonance associated with VPI. While Ally’s experience has predominantly been with pediatric speech and language disorders, she has additional training targeting accent modification with adults.",
+    "Ally lives in Kensington, MD with her husband, daughter, and dog. Ally played Division I tennis while at Radford University and continues to be an avid tennis player."
   ],
   "services": [
     {
       "header": "Who We Serve",
+      "intro": "We offer services to individuals with the following diagnoses:",
       "description": [
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit",
-        "Consectetur adipiscing elit dolore magna aliqua",
-        "Eiusmod tempor incididunt ut labore",
-        "Et dolore magna aliqua",
-        "Ut enim ad minim veniam sed do eiusmod tempor incididunt ut labore ipsum dolor sit amet",
-        "Quis nostrud exercitation ullamco laboris",
-        "Nisi ut aliquip ex ea commodo consequat ipsum dolor sit amet",
-        "In voluptate velit esse dolore magna aliqua sunt in culpa qui officia deserunt mollit anim id est laborum"
+        "Childhood apraxia of speech",
+        "Articulation and phonological disorders",
+        "Expressive and receptive language disorders",
+        "Higher order language disorders",
+        "Velopharyngeal Insufficiency (VPI)"
       ],
       "image": "who-we-serve-2.jpeg"
     },
@@ -36,24 +35,24 @@
   ],
   "faq": [
     {
-      "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-      "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "question": "Do you accept insurance?",
+      "answer": [
+        "We are out-of-network with all insurance companies. It is highly recommended that you contact your health insurance company before your evaluation and/or treatment to determine if you are able to get reimbursed. We are happy to provide you a list of codes to inquire about.",
+        "For all services rendered, we will provide an itemized bill that includes applicable diagnostic and procedural codes. This superbill can be submitted to insurance for reimbursement."
+      ]
     },
     {
-      "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-      "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "question": "What are your fees?",
+      "answer": [
+        "We will provide a 15-minute complimentary virtual consultation.",
+        "Please contact our office to learn about out-of-pocket costs for speech therapy, screeners, and evaluations."
+      ]
     },
     {
-      "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-      "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-      "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-      "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "question": "How long will my child need therapy?",
+      "answer": [
+        "Unfortunately, this is very hard to predict as there are many different factors at play. Every child is unique and responds to therapy differently. However, we can guarantee at Stahl Speech that we will provide tailored speech therapy that is designed to meet your child at their current level of development. We will help work with you and your child to help them grow and become effective communicators."
+      ]
     }
   ],
   "testimonials": [

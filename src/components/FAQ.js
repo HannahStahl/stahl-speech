@@ -5,9 +5,9 @@ const FAQ = () => (
   <div>
     <div className="content-container">
       {content.faq.map(({ question, answer }) => (
-        <div key={question}>
+        <div key={question} className="faq">
           <h4>{question}</h4>
-          <p>{answer}</p>
+          {answer.map((paragraph) => <p>{paragraph}</p>)}
         </div>
       ))}
     </div>
