@@ -1,6 +1,6 @@
 import React from 'react';
 import content from '../content.json';
-import config from '../config';
+// import config from '../config';
 
 const About = () => (
   <div>
