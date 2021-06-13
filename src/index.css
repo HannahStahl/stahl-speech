@@ -24,23 +24,8 @@ code {
 }
 
 h1 {
-  margin-bottom: 20px;
-  display: inline-block;
   text-transform: uppercase;
-  color: var(--dark-teal);
-}
-
-@media all and (min-width: 600px) {
-  h1 {
-    margin-bottom: 40px;
-  }
-}
-
-@media all and (min-width: 750px) {
-  h1 {
-    padding-bottom: 3px;
-    border-bottom: solid 3px var(--dark-teal);
-  }
+  margin-bottom: 30px;
 }
 
 p, li, input.form-control, textarea.form-control {
@@ -103,12 +88,8 @@ textarea.form-control:focus {
 
 .nav-link.active h4 {
   padding-bottom: 2px;
-}
-
-@media all and (min-width: 850px) {
-  .nav-link.active h4 {
-    border-bottom: solid 2px white;
-  }
+  display: inline-block;
+  border-bottom: solid 2px white;
 }
 
 button.btn.btn-primary.btn-lg {
@@ -129,8 +110,8 @@ button.btn.btn-primary.btn-lg {
 } 
 
 .page-content {
-  padding: 5%;
-  min-height: calc(100% - 76px);
+  padding: 7% 5%;
+  min-height: calc(100% - 66px);
   margin-bottom: -105px;
 }
 
@@ -150,6 +131,12 @@ button.btn.btn-primary.btn-lg {
   }
 }
 
+@media all and (min-width: 995px) {
+  .page-content {
+    min-height: calc(100% - 76px);
+  }
+}
+
 .home {
   display: flex;
   justify-content: flex-start;
@@ -159,12 +146,6 @@ button.btn.btn-primary.btn-lg {
 
 .home * {
   color: white;
-}
-
-.home h1 {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 30px;
 }
 
 .home p {
@@ -339,6 +320,10 @@ button.btn.btn-primary.btn-lg {
 .resource {
   margin-bottom: 20px;
   display: flex;
+}
+
+.resource:last-of-type {
+  margin-bottom: 0;
 }
 
 .resource:hover * {

@@ -4,7 +4,6 @@ import config from '../config';
 
 const Services = () => (
   <div>
-    <h1>Services</h1>
     <div className="content-container services">
       {content.services.map(({ header, description, image }, i) => (
         <div key={header} className={`service${i % 2 === 1 ? ' reverse' : ''}`}>

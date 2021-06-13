@@ -4,7 +4,6 @@ import content from '../content.json';
 
 const About = () => (
   <div>
-    <h1>About</h1>
     <div className="content-container about">
       <div className="img-placeholder"><p>INSERT HEADSHOT HERE</p></div>
       {/* <img src={`${config.publicCloudfrontURL}/dalefeuerjewelry-bio.jpg`} alt="Ally Stahl" /> */}

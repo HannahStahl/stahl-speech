@@ -3,7 +3,6 @@ import content from '../content.json';
 
 const Resources = () => (
   <div>
-    <h1>Resources</h1>
     <div className="content-container resources">
       <div>
         {content.resources.map((resource) => (

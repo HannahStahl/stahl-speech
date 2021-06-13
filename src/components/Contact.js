@@ -46,7 +46,6 @@ const Contact = () => {
 
   return (
     <div>
-      <h1>Contact</h1>
       <div className="content-container contact">
         <p>{content.contact}</p>
         <form onSubmit={handleSubmit}>
