@@ -7,7 +7,10 @@ const About = () => (
     <div className="content-container about">
       <div className="img-placeholder"><p>INSERT HEADSHOT HERE</p></div>
       {/* <img src={`${config.publicCloudfrontURL}/dalefeuerjewelry-bio.jpg`} alt="Ally Stahl" /> */}
-      {content.bio.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+      <div>
+        <h2>About Ally</h2>
+        {content.bio.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+      </div>
     </div>
   </div>
 );
