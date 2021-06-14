@@ -56,7 +56,7 @@ const App = withRouter(({ location }) => {
   return (
     <>
       <NavBar />
-      <div className="page-content">
+      <div className={`page-content${window.location.pathname === '/' ? '' : ' with-footer'}`}>
         <Routes />
       </div>
       {window.location.pathname !== '/' && <Footer />}

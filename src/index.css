@@ -111,28 +111,31 @@ button.btn.btn-primary.btn-lg {
 
 .page-content {
   padding: 7% 5%;
+}
+
+.page-content.with-footer {
   min-height: calc(100% - 66px);
   margin-bottom: -105px;
 }
 
-.page-content:after {
+.page-content.with-footer:after {
   content: "";
   display: block;
   height: 105px;
 }
 
 @media all and (min-width: 620px) {
-  .page-content {
+  .page-content.with-footer {
     margin-bottom: -90px;
   }
 
-  .page-content:after {
+  .page-content.with-footer:after {
     height: 90px;
   }
 }
 
 @media all and (min-width: 995px) {
-  .page-content {
+  .page-content.with-footer {
     min-height: calc(100% - 76px);
   }
 }
