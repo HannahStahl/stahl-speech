@@ -6,7 +6,7 @@ import content from '../content.json';
 
 const Home = () => (
   <div className="home">
-    <img src={`${config.publicCloudfrontURL}/stahl-speech-home.jpg`} alt={config.businessName} className="home-page-image" />
+    <img src={`${config.publicCloudfrontURL}/stahl-speech-home-flipped.jpg`} alt={config.businessName} className="home-page-image" />
     <div>
       <h1>Stahl Speech and Language Therapy</h1>
       <p>{content.intro}</p>
