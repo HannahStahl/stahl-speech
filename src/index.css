@@ -147,6 +147,10 @@ button.btn.btn-primary.btn-lg {
   max-width: 500px;
 }
 
+.home img {
+  object-position: 65% 10%;
+}
+
 @media all and (min-width: 620px) {
   .home {
     text-align: left;
