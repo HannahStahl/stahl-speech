@@ -5,7 +5,7 @@ const dev = {
 
 const prod = {
   emailURL: 'https://aiikn63n03.execute-api.us-east-1.amazonaws.com/prod/email/send',
-  emailAddress: 'ally@stahlspeech.com',
+  emailAddress: 'info@stahlspeech.com',
 };
 
 // Default to dev if not set
@@ -18,5 +18,6 @@ export default {
   apiURL: 'https://gngm83ns.apicdn.sanity.io/v1/graphql/production/default',
   publicCloudfrontURL: 'https://d17jmxltsx3ffm.cloudfront.net',
   businessName: 'Stahl Speech and Language Therapy, LLC',
+  phoneNumber: '301-392-7494',
   ...config,
 };

@@ -231,6 +231,20 @@ button.btn.btn-primary.btn-lg {
   color: white;
 }
 
+.desktop {
+  display: none;
+}
+
+@media all and (min-width: 600px) {
+  .desktop {
+    display: unset;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
 .content-container {
   max-width: 1000px;
   margin-left: auto;
