@@ -1,17 +1,21 @@
-import React from 'react';
-import content from '../content.json';
+import React, { useContext } from 'react';
+import Context from './Context';
+import PortableText from './PortableText';
 
-const FAQ = () => (
-  <div>
-    <div className="content-container">
-      {content.faq.map(({ question, answer }) => (
-        <div key={question} className="faq">
-          <h4>{question}</h4>
-          {answer.map((paragraph) => <p>{paragraph}</p>)}
-        </div>
-      ))}
+const FAQ = () => {
+  const { content } = useContext(Context);
+  return content ? (
+    <div>
+      <div className="content-container">
+        {content.Faq.questions.map(({ question, answerRaw }) => (
+          <div key={question} className="faq">
+            <h4>{question}</h4>
+            <PortableText text={answerRaw} />
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
-);
+  ) : <></>;
+};
 
 export default FAQ;

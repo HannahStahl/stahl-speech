@@ -1,23 +1,30 @@
-import React from 'react';
-import content from '../content.json';
+import React, { useContext } from 'react';
+import Context from './Context';
+import PortableText from './PortableText';
 import config from '../config';
 
-const Services = () => (
-  <div>
-    <div className="content-container services">
-      {content.services.map(({ header, intro, description, image }, i) => (
-        <div key={header} className={`service${i % 2 === 1 ? ' reverse' : ''}`}>
-          {i % 2 === 1 && <img src={`${config.publicCloudfrontURL}/stahl-speech-${image}`} alt={header} />}
+const Services = () => {
+  const { content } = useContext(Context);
+  return content ? (
+    <div>
+      <div className="content-container services">
+        <div key={content.Services.section1.title} className="service">
           <div className="service-description">
-            <h2>{header}</h2>
-            {intro && <p>{intro}</p>}
-            <ul>{description.map((paragraph) => <li>{paragraph}</li>)}</ul>
+            <h2>{content.Services.section1.title}</h2>
+            <PortableText text={content.Services.section1.descriptionRaw} />
           </div>
-          {i % 2 === 0 && <img src={`${config.publicCloudfrontURL}/stahl-speech-${image}`} alt={header} />}
+          <img src={`${config.publicCloudfrontURL}/stahl-speech-who-we-serve-2.jpeg`} alt={content.Services.section1.title} />
         </div>
-      ))}
+        <div key={content.Services.section1.title} className="service reverse">
+          <img src={`${config.publicCloudfrontURL}/stahl-speech-services-provided-2.jpeg`} alt={content.Services.section2.title} />
+          <div className="service-description">
+            <h2>{content.Services.section2.title}</h2>
+            <PortableText text={content.Services.section2.descriptionRaw} />
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-);
+  ) : <></>;
+};
 
 export default Services;

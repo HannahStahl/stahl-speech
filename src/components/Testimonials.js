@@ -1,17 +1,20 @@
-import React from 'react';
-import content from '../content.json';
+import React, { useContext } from 'react';
+import Context from './Context';
 
-const Testimonials = () => (
-  <div>
-    <div className="content-container testimonials">
-      {content.testimonials.map(({ quote, source }) => (
-        <div key={source} className="testimonial">
-          <p>{`“${quote}”`}</p>
-          <p className="source">{`- ${source}`}</p>
-        </div>
-      ))}
+const Testimonials = () => {
+  const { content } = useContext(Context);
+  return content ? (
+    <div>
+      <div className="content-container testimonials">
+        {content.Testimonials.testimonials.map(({ quote, source }) => (
+          <div key={source} className="testimonial">
+            <p>{`“${quote}”`}</p>
+            <p className="source">{`- ${source}`}</p>
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
-);
+  ) : <></>;
+};
 
 export default Testimonials;

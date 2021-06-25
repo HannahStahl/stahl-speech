@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import FormGroup from 'react-bootstrap/FormGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
-import content from '../content.json';
+import Context from './Context';
+import PortableText from './PortableText';
 import config from '../config';
 
 const Contact = () => {
+  const { content } = useContext(Context);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -44,10 +46,10 @@ const Contact = () => {
     });
   };
 
-  return (
+  return content ? (
     <div>
       <div className="content-container contact">
-        <p>{content.contact}</p>
+        <PortableText text={content.Contact.noteRaw} />
         <form onSubmit={handleSubmit}>
           <FormGroup controlId="name">
             <FormControl
@@ -85,7 +87,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
-  );
+  ) : <></>;
 };
 
 export default Contact;

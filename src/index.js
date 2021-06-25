@@ -1,66 +1,85 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, withRouter, Route } from 'react-router-dom';
-import { CSSTransition } from 'react-transition-group';
+import { BrowserRouter, withRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Home from './components/Home';
-import About from './components/About';
-import Services from './components/Services';
-import FAQ from './components/FAQ';
-import Testimonials from './components/Testimonials';
-import Resources from './components/Resources';
-import Contact from './components/Contact';
+import Context from './components/Context';
+import Routes from './components/Routes';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-
-const Routes = () => {
-  const routes = [
-    { path: '/', Component: Home },
-    { path: '/about', Component: About },
-    { path: '/services', Component: Services },
-    { path: '/faq', Component: FAQ },
-    { path: '/testimonials', Component: Testimonials },
-    { path: '/resources', Component: Resources },
-    { path: '/contact', Component: Contact },
-  ];
-
-  return (
-    <>
-      {routes.map(({ path, Component }) => (
-        <Route key={path} exact path={path}>
-          {({ match }) => (
-            <CSSTransition
-              in={match !== null}
-              timeout={0}
-              classNames="page"
-              unmountOnExit
-            >
-              <div className="page">
-                <Component match={match} />
-              </div>
-            </CSSTransition>
-          )}
-        </Route>
-      ))}
-    </>
-  );
-};
+import config from './config';
 
 const App = withRouter(({ location }) => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [location]);
 
+  const [content, setContent] = useState(undefined);
+
+  useEffect(() => {
+    const query = `
+      query {
+        Home(id: "home") {
+          title
+          descriptionRaw
+        }
+        About(id: "about") {
+          title
+          bioRaw
+        }
+        Services(id: "services") {
+          section1 {
+            title
+            descriptionRaw
+          }
+          section2 {
+            title
+            descriptionRaw
+          }
+        }
+        Faq(id: "faq") {
+          questions {
+            question
+            answerRaw
+          }
+        }
+        Testimonials(id: "testimonials") {
+          testimonials {
+            quote
+            source
+          }
+        }
+        Resources(id: "resources") {
+          resources {
+            name
+          }
+        }
+        Contact(id: "contact") {
+          noteRaw
+        }
+      }
+    `;
+    const params = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query }),
+    };
+    fetch(config.apiURL, params)
+      .then((res) => res.json())
+      .then(({ data }) => {
+        setContent(data);
+      });
+  }, []);
+
   return (
-    <>
+    <Context.Provider value={{ content }}>
       <NavBar />
       <div className={`page-content${window.location.pathname === '/' ? '' : ' with-footer'}`}>
         <Routes />
       </div>
       {window.location.pathname !== '/' && <Footer />}
-    </>
+    </Context.Provider>
   );
 });
 
