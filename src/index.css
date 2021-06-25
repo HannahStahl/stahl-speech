@@ -251,24 +251,19 @@ button.btn.btn-primary.btn-lg {
   }
 }
 
-.service {
+.who-we-serve {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-}
-
-.service.reverse {
-  flex-wrap: wrap-reverse;
-  align-items: flex-end;
-}
-
-.service img {
   margin-bottom: 30px;
+}
+
+.who-we-serve img {
   max-width: 100%;
 }
 
-.service ul {
+.who-we-serve ul {
   padding-left: 20px;
 }
 
@@ -277,26 +272,27 @@ button.btn.btn-primary.btn-lg {
     width: 50%;
   }
 
-  .service img {
+  .who-we-serve {
+    margin-bottom: 0;
+  }
+
+  .who-we-serve img {
     width: 50%;
     object-fit: contain;
   }
 
-  .service:not(.reverse) .service-description,
-  .service.reverse img {
+  .service .service-description {
     padding-right: 30px;
   }
 
-  .service:not(.reverse) img,
-  .service.reverse .service-description {
+  .service img {
     padding-left: 30px;
   }
 }
 
 @media all and (min-width: 600px) {
-  .service {
+  .who-we-serve {
     margin-top: 15px;
-    margin-bottom: 15px;
   }
 }
 
