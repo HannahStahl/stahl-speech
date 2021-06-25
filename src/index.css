@@ -115,13 +115,13 @@ button.btn.btn-primary.btn-lg {
 
 .page-content.with-footer {
   min-height: calc(100% - 66px);
-  margin-bottom: -105px;
+  margin-bottom: -125px;
 }
 
 .page-content.with-footer:after {
   content: "";
   display: block;
-  height: 105px;
+  height: 125px;
 }
 
 @media all and (min-width: 620px) {
@@ -202,7 +202,7 @@ button.btn.btn-primary.btn-lg {
 .footer {
   padding-left: 8px;
   padding-right: 8px;
-  height: 105px;
+  height: 125px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -217,7 +217,7 @@ button.btn.btn-primary.btn-lg {
   }
 }
 
-.footer p,a {
+.footer p, .footer a {
   font-size: 16px;
   margin-bottom: 0px;
   color: white;
