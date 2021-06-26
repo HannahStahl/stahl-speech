@@ -53,6 +53,11 @@ const App = withRouter(({ location }) => {
         Resources(id: "resources") {
           resources {
             name
+            file {
+              asset {
+                url
+              }
+            }
           }
         }
         Contact(id: "contact") {
