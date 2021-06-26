@@ -75,10 +75,10 @@ const App = withRouter(({ location }) => {
   return (
     <Context.Provider value={{ content }}>
       <NavBar />
-      <div className={`page-content${window.location.pathname === '/' ? '' : ' with-footer'}`}>
+      <div className="page-content with-footer">
         <Routes />
       </div>
-      {window.location.pathname !== '/' && <Footer />}
+      <Footer />
     </Context.Provider>
   );
 });

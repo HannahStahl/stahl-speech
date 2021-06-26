@@ -126,11 +126,11 @@ button.btn.btn-primary.btn-lg {
 
 @media all and (min-width: 620px) {
   .page-content.with-footer {
-    margin-bottom: -90px;
+    margin-bottom: -80px;
   }
 
   .page-content.with-footer:after {
-    height: 90px;
+    height: 80px;
   }
 }
 
@@ -138,6 +138,13 @@ button.btn.btn-primary.btn-lg {
   .page-content.with-footer {
     min-height: calc(100% - 76px);
   }
+}
+
+.content-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 .home {
@@ -213,7 +220,7 @@ button.btn.btn-primary.btn-lg {
 
 @media all and (min-width: 620px) {
   .footer {
-    height: 90px;
+    height: 80px;
   }
 }
 
@@ -243,13 +250,6 @@ button.btn.btn-primary.btn-lg {
   .mobile {
     display: none;
   }
-}
-
-.content-container {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
 }
 
 .services,
