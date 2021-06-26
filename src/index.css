@@ -332,10 +332,12 @@ button.btn.btn-primary.btn-lg {
 .resources {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .resource {
-  margin-bottom: 20px;
+  margin: 0 30px 30px;
   display: flex;
 }
 
