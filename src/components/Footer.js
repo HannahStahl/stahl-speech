@@ -12,13 +12,13 @@ const Footer = () => (
         Websites by Hannah
       </a>
     </p>
+    <a href="https://websitesbyhannah.com" target="_blank" rel="noopener noreferrer" className="mobile">
+      Websites by Hannah
+    </a>
     <p>
       <b>©</b>
       {` ${config.businessName}, ${(new Date()).getFullYear()}. All Rights Reserved.`}
     </p>
-    <a href="https://websitesbyhannah.com" target="_blank" rel="noopener noreferrer" className="mobile">
-      Websites by Hannah
-    </a>
   </div>
 );
 
