@@ -80,7 +80,7 @@ const App = withRouter(({ location }) => {
   return (
     <Context.Provider value={{ content }}>
       <NavBar />
-      <div className="page-content with-footer">
+      <div className="page-content">
         <Routes />
       </div>
       <Footer />

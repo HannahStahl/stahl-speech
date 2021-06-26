@@ -113,29 +113,29 @@ button.btn.btn-primary.btn-lg {
   padding: 7% 5%;
 }
 
-.page-content.with-footer {
+.page-content {
   min-height: calc(100% - 66px);
   margin-bottom: -125px;
 }
 
-.page-content.with-footer:after {
+.page-content:after {
   content: "";
   display: block;
   height: 125px;
 }
 
 @media all and (min-width: 620px) {
-  .page-content.with-footer {
+  .page-content {
     margin-bottom: -80px;
   }
 
-  .page-content.with-footer:after {
+  .page-content:after {
     height: 80px;
   }
 }
 
 @media all and (min-width: 995px) {
-  .page-content.with-footer {
+  .page-content {
     min-height: calc(100% - 76px);
   }
 }
