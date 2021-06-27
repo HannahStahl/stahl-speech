@@ -34,6 +34,17 @@ const App = withRouter(({ location }) => {
           }
           section2 {
             title
+            subsection1 {
+              title
+              descriptionRaw
+            }
+            subsection2 {
+              title
+              descriptionRaw
+            }
+          }
+          section3 {
+            title
             descriptionRaw
           }
         }

@@ -57,6 +57,13 @@ textarea.form-control:focus {
   box-shadow: 0 0 0 0.2rem var(--light-teal);
 }
 
+hr {
+  height: 1px;
+  background-color: var(--light-gray);
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .navbar {
   background-color: var(--teal);
 }
@@ -263,7 +270,6 @@ button.btn.btn-primary.btn-lg {
   }
 }
 
-.services,
 .testimonials {
   display: flex;
   flex-wrap: wrap;
@@ -280,7 +286,7 @@ button.btn.btn-primary.btn-lg {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -288,7 +294,7 @@ button.btn.btn-primary.btn-lg {
   max-width: 100%;
 }
 
-.who-we-serve ul {
+ul {
   padding-left: 20px;
 }
 
@@ -314,6 +320,34 @@ button.btn.btn-primary.btn-lg {
 @media all and (min-width: 600px) {
   .who-we-serve {
     margin-top: 15px;
+  }
+}
+
+.services-provided {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  border: solid 1px var(--teal);
+  background-color: var(--light-gray);
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media all and (min-width: 800px) {
+  .service {
+    max-width: calc(50% - 20px);
+    margin: 20px;
+  }
+
+  .service:first-of-type {
+    margin-left: 0;
+  }
+  
+  .service:last-of-type {
+    margin-right: 0;
   }
 }
 
