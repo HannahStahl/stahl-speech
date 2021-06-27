@@ -7,7 +7,6 @@ import * as serviceWorker from './serviceWorker';
 import Context from './components/Context';
 import Routes from './components/Routes';
 import NavBar from './components/NavBar';
-import Footer from './components/Footer';
 import config from './config';
 
 const App = withRouter(({ location }) => {
@@ -80,10 +79,7 @@ const App = withRouter(({ location }) => {
   return (
     <Context.Provider value={{ content }}>
       <NavBar />
-      <div className="page-content">
-        <Routes />
-      </div>
-      <Footer />
+      <Routes />
     </Context.Provider>
   );
 });

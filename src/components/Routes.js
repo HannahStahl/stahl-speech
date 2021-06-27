@@ -8,6 +8,7 @@ import FAQ from './FAQ';
 import Testimonials from './Testimonials';
 import Resources from './Resources';
 import Contact from './Contact';
+import Footer from './Footer';
 
 const Routes = () => {
   const routes = [
@@ -27,12 +28,15 @@ const Routes = () => {
           {({ match }) => (
             <CSSTransition
               in={match !== null}
-              timeout={0}
+              timeout={300}
               classNames="page"
               unmountOnExit
             >
               <div className="page">
-                <Component match={match} />
+                <div>
+                  <Component match={match} />
+                  <Footer />
+                </div>
               </div>
             </CSSTransition>
           )}

@@ -47,47 +47,45 @@ const Contact = () => {
   };
 
   return content ? (
-    <div>
-      <div className="content-container contact">
-        <PortableText text={content.Contact.noteRaw} />
-        <form onSubmit={handleSubmit}>
-          <FormGroup controlId="name">
-            <FormControl
-              type="text"
-              placeholder="Your name"
-              value={name}
-              onChange={(e) => updateValue(e, setName)}
-            />
-          </FormGroup>
-          <FormGroup controlId="email">
-            <FormControl
-              placeholder="Your email address"
-              type="email"
-              value={email}
-              onChange={(e) => updateValue(e, setEmail)}
-            />
-          </FormGroup>
-          <FormGroup controlId="message">
-            <FormControl
-              rows={10}
-              as="textarea"
-              placeholder="Your message"
-              value={message}
-              onChange={(e) => updateValue(e, setMessage)}
-            />
-          </FormGroup>
-          <Button
-            block
-            type="submit"
-            size="lg"
-            disabled={!validateForm()}
-          >
-            {buttonText}
-          </Button>
-        </form>
-      </div>
+    <div className="content-container contact">
+      <PortableText text={content.Contact.noteRaw} />
+      <form onSubmit={handleSubmit}>
+        <FormGroup controlId="name">
+          <FormControl
+            type="text"
+            placeholder="Your name"
+            value={name}
+            onChange={(e) => updateValue(e, setName)}
+          />
+        </FormGroup>
+        <FormGroup controlId="email">
+          <FormControl
+            placeholder="Your email address"
+            type="email"
+            value={email}
+            onChange={(e) => updateValue(e, setEmail)}
+          />
+        </FormGroup>
+        <FormGroup controlId="message">
+          <FormControl
+            rows={10}
+            as="textarea"
+            placeholder="Your message"
+            value={message}
+            onChange={(e) => updateValue(e, setMessage)}
+          />
+        </FormGroup>
+        <Button
+          block
+          type="submit"
+          size="lg"
+          disabled={!validateForm()}
+        >
+          {buttonText}
+        </Button>
+      </form>
     </div>
-  ) : <></>;
+  ) : <div className="content-container" />;
 };
 
 export default Contact;

@@ -84,11 +84,12 @@ textarea.form-control:focus {
   text-transform: uppercase;
   font-size: 20px;
   margin-top: 8px;
+  padding-bottom: 2px;
+  display: inline-block;
+  border-bottom: solid 2px transparent;
 }
 
 .nav-link.active h4 {
-  padding-bottom: 2px;
-  display: inline-block;
   border-bottom: solid 2px white;
 }
 
@@ -107,50 +108,57 @@ button.btn.btn-primary.btn-lg:active {
 
 button.btn.btn-primary.btn-lg {
   box-shadow: none;
-} 
-
-.page-content {
-  padding: 7% 5%;
 }
 
-.page-content {
-  min-height: calc(100% - 66px);
-  margin-bottom: -125px;
+.page {
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
-.page-content:after {
-  content: "";
-  display: block;
-  height: 125px;
+.page-enter {
+  opacity: 0;
 }
 
-@media all and (min-width: 620px) {
-  .page-content {
-    margin-bottom: -80px;
-  }
-
-  .page-content:after {
-    height: 80px;
-  }
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
 }
 
-@media all and (min-width: 995px) {
-  .page-content {
-    min-height: calc(100% - 76px);
-  }
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
 }
 
 .content-container {
-  max-width: 1000px;
+  max-width: min(1000px, calc(100vw - 14%));
+  min-height: calc(100vh - 66px);
+  text-align: left;
+  padding-top: 7%;
+  padding-bottom: calc(7% + 125px);
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
+}
+
+@media all and (min-width: 995px) {
+  .content-container {
+    min-height: calc(100vh - 76px);
+    padding-bottom: calc(7% + 80px);
+  }
 }
 
 .home {
+  max-width: calc(100vw - 10%);
+  text-align: center;
+}
+
+.home-content {
   display: flex;
   justify-content: flex-start;
-  text-align: center;
   max-width: 500px;
 }
 
@@ -183,7 +191,7 @@ button.btn.btn-primary.btn-lg {
 }
 
 .home-page-image {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -207,6 +215,9 @@ button.btn.btn-primary.btn-lg {
 }
 
 .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   padding-left: 8px;
   padding-right: 8px;
   height: 125px;
@@ -286,10 +297,6 @@ button.btn.btn-primary.btn-lg {
     width: 50%;
   }
 
-  .who-we-serve {
-    margin-bottom: 0;
-  }
-
   .who-we-serve img {
     width: 50%;
     object-fit: contain;
@@ -356,6 +363,10 @@ button.btn.btn-primary.btn-lg {
 
 .resource h4 {
   margin-left: 5px;
+}
+
+.pay-bill {
+  text-align: center;
 }
 
 .contact {
