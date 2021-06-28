@@ -230,14 +230,19 @@ button.btn.btn-primary.btn-lg {
   filter: brightness(40%);
 }
 
-.about img {
+.about-img-container {
   width: 100%;
+  min-height: 300px;
   float: left;
   margin-bottom: 25px;
 }
 
+.about-img-container img {
+  width: 100%;
+}
+
 @media all and (min-width: 600px) {
-  .about img {
+  .about-img-container {
     width: calc(50% - 15px);
     margin-right: 50px;
   }

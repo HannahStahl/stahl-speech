@@ -9,7 +9,9 @@ const About = () => {
   return content ? (
     <Fade>
       <div className="content-container about">
-        <img src={`${config.publicCloudfrontURL}/stahl-speech-about.jpg`} alt="Ally Stahl" />
+        <div className="about-img-container">
+          <img src={`${config.publicCloudfrontURL}/stahl-speech-about.jpg`} alt="Ally Stahl" />
+        </div>
         <div>
           <h2>{content.About.title}</h2>
           <PortableText text={content.About.bioRaw} />
