@@ -64,8 +64,15 @@ textarea.form-control:focus {
 hr {
   height: 1px;
   background-color: var(--light-gray);
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media all and (min-width: 800px) {
+  hr {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .navbar {
@@ -307,6 +314,7 @@ button.btn.btn-primary.btn-lg {
 
 .who-we-serve img {
   max-width: 100%;
+  margin-bottom: 20px;
 }
 
 ul {
@@ -321,6 +329,7 @@ ul {
   .who-we-serve img {
     width: 50%;
     object-fit: contain;
+    margin-bottom: 10px;
   }
 
   .service .service-description {
