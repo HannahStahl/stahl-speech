@@ -90,11 +90,15 @@ hr {
   background-image: url("hamburger.svg");
 }
 
+.nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .nav-link h4 {
   color: white;
   text-transform: uppercase;
   font-size: 20px;
-  margin-top: 8px;
   padding-bottom: 2px;
   display: inline-block;
   border-bottom: solid 2px transparent;
@@ -102,6 +106,13 @@ hr {
 
 .nav-link.active h4 {
   border-bottom: solid 2px white;
+}
+
+@media all and (min-width: 800px) {
+  .nav-link h4 {
+    margin-top: 8px;
+    padding-top: 8px;
+  }
 }
 
 button.btn.btn-primary.btn-lg {
@@ -157,7 +168,7 @@ button.btn.btn-primary.btn-lg {
 
 @media all and (min-width: 995px) {
   .content-container {
-    min-height: calc(100vh - 76px);
+    min-height: calc(100vh - 75px);
     padding-bottom: calc(7% + 80px);
   }
 }
