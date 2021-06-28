@@ -419,5 +419,5 @@ ul {
 }
 
 .contact {
-  max-width: 600px;
+  max-width: min(600px, calc(100vw - 14%));
 }
