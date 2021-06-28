@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  --light-gray: #eee;
+  --light-gray: rgb(248, 248, 250);
   --light-teal: #9dcbcf;
   --teal: #308b94;
   --dark-teal: #1f5d63;
