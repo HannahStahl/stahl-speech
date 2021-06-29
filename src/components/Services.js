@@ -15,7 +15,7 @@ const Services = () => {
             <PortableText text={content.Services.section1.descriptionRaw} />
           </div>
           <img
-            src={`${config.publicCloudfrontURL}/stahl-speech-services.jpeg`}
+            src={`${config.publicCloudfrontURL}/stahl-speech-who-we-serve.jpg`}
             alt={content.Services.section1.title}
           />
         </div>

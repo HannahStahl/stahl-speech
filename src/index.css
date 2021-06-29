@@ -319,6 +319,7 @@ button.btn.btn-primary.btn-lg {
 
 .who-we-serve img {
   max-width: 100%;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -334,6 +335,7 @@ ul {
   .who-we-serve img {
     width: 50%;
     object-fit: contain;
+    margin-top: 0;
     margin-bottom: 10px;
   }
 
