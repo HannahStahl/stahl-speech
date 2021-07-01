@@ -8,6 +8,7 @@ const FAQ = () => {
   return content ? (
     <Fade>
       <div className="content-container">
+        <h2>{content.Faq.title}</h2>
         {content.Faq.questions.map(({ question, answerRaw }) => (
           <div key={question} className="faq">
             <h4>{question}</h4>

@@ -7,7 +7,8 @@ const Resources = () => {
   const { content } = useContext(Context);
   return content ? (
     <div className="content-container">
-      <Fade cascade duration={1000}>
+      <Fade>
+        <h2 className="resources-title">{content.Resources.title}</h2>
         <div className="resources">
           {content.Resources.resources.map(({ name, file }) => (
             <a href={file.asset.url} target="_blank" rel="noopener noreferrer" className="resource">

@@ -50,6 +50,7 @@ const Contact = () => {
   return content ? (
     <Fade>
       <div className="content-container contact">
+        <h2>{content.Contact.title}</h2>
         <PortableText text={content.Contact.noteRaw} />
         <form onSubmit={handleSubmit}>
           <FormGroup controlId="name">

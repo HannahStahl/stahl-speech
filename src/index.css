@@ -25,7 +25,7 @@ code {
 
 h1 {
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 p, li, input.form-control, textarea.form-control {
@@ -210,12 +210,12 @@ button.btn.btn-primary.btn-lg {
 }
 
 .home p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 @media all and (min-width: 600px) {
   .home p {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
@@ -297,18 +297,6 @@ button.btn.btn-primary.btn-lg {
   }
 }
 
-.testimonials {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-@media all and (min-width: 1100px) {
-  .testimonials {
-    align-items: flex-start;
-  }
-}
-
 .who-we-serve {
   width: 100%;
   display: flex;
@@ -383,15 +371,18 @@ ul {
 }
 
 .faq {
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .testimonial {
   padding: 20px;
-  margin: 0 20px 40px 20px;
+  margin-top: 30px;
   border: solid 1px var(--dark-teal);
-  max-width: 290px;
   background-color: var(--light-gray);
+}
+
+.quote {
+  margin-bottom: 0;
 }
 
 .source {
@@ -406,6 +397,11 @@ ul {
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 30px;
+}
+
+.resources-title {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .resource {

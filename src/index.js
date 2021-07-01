@@ -49,18 +49,21 @@ const App = withRouter(({ location }) => {
           }
         }
         Faq(id: "faq") {
+          title
           questions {
             question
             answerRaw
           }
         }
         Testimonials(id: "testimonials") {
+          title
           testimonials {
             quote
             source
           }
         }
         Resources(id: "resources") {
+          title
           resources {
             name
             file {
@@ -71,6 +74,7 @@ const App = withRouter(({ location }) => {
           }
         }
         Contact(id: "contact") {
+          title
           noteRaw
         }
       }
