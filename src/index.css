@@ -407,13 +407,25 @@ ul {
 }
 
 .resources-title {
-  text-align: center;
   margin-bottom: 60px;
 }
 
+@media all and (min-width: 600px) {
+  .resources-title {
+    text-align: center;
+  }
+}
+
 .resource {
-  margin: 0 30px 30px;
+  margin-bottom: 30px;
   display: flex;
+}
+
+@media all and (min-width: 600px) {
+  .resource {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 .resource:last-of-type {
