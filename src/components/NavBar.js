@@ -8,9 +8,7 @@ const NavBar = () => (
     <Navbar.Brand as={NavLink} to="/">
       <img
         alt="Home"
-        src="/owl.svg"
-        width="30"
-        height="30"
+        src="/logo.png"
         className="d-inline-block align-top"
       />
     </Navbar.Brand>
