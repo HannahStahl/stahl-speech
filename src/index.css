@@ -445,8 +445,10 @@ ul {
   margin-left: 5px;
 }
 
-.pay-bill {
-  text-align: center;
+@media all and (min-width: 600px) {
+  .pay-bill {
+    text-align: center;
+  }
 }
 
 .contact {

@@ -18,13 +18,13 @@ const Resources = () => {
           ))}
         </div>
       </Fade>
-      <Fade>
+      {/* <Fade>
         <div className="pay-bill">
           <a href="https://google.com" target="_blank" rel="noopener noreferrer">
             <Button size="lg">Pay bill</Button>
           </a>
         </div>
-      </Fade>
+      </Fade> */}
     </div>
   ) : <div className="content-container" />;
 };
