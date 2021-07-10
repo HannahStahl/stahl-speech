@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import Button from 'react-bootstrap/Button';
 import { Fade } from 'react-reveal';
 import Context from './Context';
 
@@ -18,13 +17,6 @@ const Resources = () => {
           ))}
         </div>
       </Fade>
-      {/* <Fade>
-        <div className="pay-bill">
-          <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-            <Button size="lg">Pay bill</Button>
-          </a>
-        </div>
-      </Fade> */}
     </div>
   ) : <div className="content-container" />;
 };
