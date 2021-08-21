@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Button from 'react-bootstrap/Button';
 import { Fade } from 'react-reveal';
 import Context from './Context';
 
@@ -15,6 +16,13 @@ const Resources = () => {
               <h4 key={name}>{name}</h4>
             </a>
           ))}
+        </div>
+      </Fade>
+      <Fade>
+        <div className="patient-portal">
+          <a href="https://stahlspeech.theranest.com" target="_blank" rel="noopener noreferrer">
+            <Button size="lg">Patient Portal</Button>
+          </a>
         </div>
       </Fade>
     </div>

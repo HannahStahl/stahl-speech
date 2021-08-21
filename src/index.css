@@ -446,7 +446,7 @@ ul {
 }
 
 @media all and (min-width: 600px) {
-  .pay-bill {
+  .patient-portal {
     text-align: center;
   }
 }
